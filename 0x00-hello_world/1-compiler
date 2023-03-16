@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -c "$CFILE" -o "$(basename "$CFILE" .c).i" && mv "$(basename "$CFILE" .c).i" "$(basename "$CFILE" .c).o"
