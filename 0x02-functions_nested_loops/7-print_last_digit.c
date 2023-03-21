@@ -1,30 +1,18 @@
 #include "main.h"
-#include <limits.h>
 
 /**
- *print_last_digit - function that prints the last digit of a number.
- *@n: integer to check.
- *Return: Always 0.
+ * print_last_digit - print last digit of int
+ * @n: int type number
+ * Return: int
  */
 
 int print_last_digit(int n)
 {
-	long int l;
-
+	n = n % 10;
 	if (n < 0)
 	{
-		l = -n % 10;
-		_putchar(l + 48);
+		n = n * -1;
 	}
-	else if (n == INT_MIN)
-	{
-		l = -INT_MIN % 10;
-		_putchar(l + 48);
-	}
-	else
-	{
-		l = n % 10;
-		_putchar(l + 48);
-	}
-	return (l);
+	_putchar(n + '0');
+	return (n);
 }
