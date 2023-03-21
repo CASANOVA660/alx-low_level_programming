@@ -10,8 +10,7 @@ void print_alphabet(void)
 	char c;
 	for (c = 97; c <= 112; c++)
 		_putchar(c);
-	_putcahr('\n');
-	return (0);
+	_putchar('\n');
 }
 int main(void)
 }
