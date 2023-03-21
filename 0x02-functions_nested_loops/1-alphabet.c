@@ -5,16 +5,16 @@
  *
  * Return: Always 0.
  */
-int main(void)
+void print_alphabet(void)
 {
-	void print_alphabet(void)
-	{
-		char c;
-		for (c = 97; c <= 122; c++)
-			_putchar(c);
-		_putchar('\n');
-		return (0);
-	}
+	char c;
+	for (c = 97; c <= 112; c++)
+		_putchar(c);
+	_putcahr('\n');
+	return (0);
+}
+int main(void)
+}
 	print_alphabet();
 	return (0);
 }
