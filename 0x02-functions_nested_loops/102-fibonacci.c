@@ -1,25 +1,35 @@
 #include <stdio.h>
 
 /**
- * main - check the code.
+ * main - print fibonacci
  *
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
 
-int main(void) 
+int main(void)
 {
-    	int a = 1, b = 2, c, i;
+	long int num1 = 1, num2 = 2, i, next;
 
-    	printf("%d, %d, ", a, b);
+	printf("%ld, %ld, ", num1, num2);
 
-   	 for (i = 2; i < 50; i++)
-	 {
-        	c = a + b;
-        	printf("%d, ", c);
-        	a = b;
-        	b = c;
-    	}
+	for (i = 3; i <= 50; i++)
+	{
+		next = num1 + num2;
 
-    	printf("\n");
-    	return (0);
+		if (i != 50)
+		{
+			printf("%ld, ", next);
+		}
+		else
+		{
+			printf("%ld", next);
+		}
+
+		num1 = num2;
+		num2 = next;
+
+	}
+
+	printf("\n");
+	return (0);
 }
