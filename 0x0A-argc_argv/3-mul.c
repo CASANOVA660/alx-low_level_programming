@@ -13,17 +13,16 @@ int main(int argc, char *argv[])
 
 	num1 = argv[1];
 	num2 = argv[2];
+	result = num1 * num2;
 
-	if (argc =! 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	else
 	{
-		result = num1 * num2;
 		printf("%d\n", result);
-		return (result);
+		return (0);
 	}
-	return (0);
 }
