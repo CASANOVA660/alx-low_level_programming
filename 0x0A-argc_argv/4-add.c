@@ -11,9 +11,9 @@
 
 int main(int argc, char *argv[])
 {
-	int add, i;
+	int add = 0, i;
 
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		if (argv[i] < 48 || argv[i] > 57)
 		{
