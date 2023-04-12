@@ -7,25 +7,25 @@
  *
  * Return: pointer of an array
  */
+
 char *_strdup(char *str)
 {
-	char *ptrarr;
+	char *st;
 	unsigned int i, j;
 
 	if (str == NULL)
 		return (NULL);
-	
+
 	for (i = 0; str[i] != '\0'; i++)
 		;
 
-	ptrarr = (char *)malloc(sizeof(char) * (i + 1));
+	st = (char *)malloc(sizeof(char) * (i + 1));
 
-
-	if (ptrarr == NULL)
+	if (st == NULL)
 		return (NULL);
 
 	for (j = 0; j <= i; j++)
-		ptrarr[j] = str[j];
+		st[j] = str[j];
 
-	return (ptrarr);
+	return (st);
 }
