@@ -10,12 +10,12 @@
 
 size_t list_len(const list_t *h)
 {
-	unsigned int nbelememt = 0;
+	size_t  nb = 0;
 
 	while (h != NULL)
 	{
-		nbelement++;
+		nb++;
 		h = h->next;
 	}
-	return (nbelement);
+	return (nb);
 }	
