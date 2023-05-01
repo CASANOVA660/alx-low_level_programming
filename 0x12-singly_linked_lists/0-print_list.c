@@ -10,7 +10,7 @@
 
 size_t print_list(const list_t *h)
 {
-	int nbnode = 0;
+	size_t nbnode = 0;
 	list_t *ptr = h;
 
 	while (ptr != NULL)
@@ -22,7 +22,7 @@ size_t print_list(const list_t *h)
 			nbnode++;
 		else
 		{
-			printf("[%d]%s\n", ptr->len, ptr->str);
+			printf("[%u]%s\n", ptr->len, ptr->str);
 			nbnode++;
 			ptr = ptr->next;
 		}
