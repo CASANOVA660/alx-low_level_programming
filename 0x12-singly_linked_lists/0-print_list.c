@@ -18,7 +18,10 @@ size_t print_list(const list_t *h)
 		if (ptr->str == NULL)
 			printf("[0] (nil)");
 		else
-			printf("%s\n", ptr->str);
+		{
+			printf("[%d]%s\n", ptr->len, ptr->str);
+			printf("-> %d elements\n", nbnode);
+		}
 		nbnode++;
 		ptr = ptr->next;
 	}
